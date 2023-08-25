@@ -15,7 +15,7 @@ const MovieCard:React.FC<MovieCardProps> = ({
     const { openModal } = useInfoModal();
     return (
         <div className="group bg-zinc-900 col-span relative h-[12vw]">
-            <image
+            <img
              className="
                 cursor-pointer
                 object-cover
@@ -28,7 +28,7 @@ const MovieCard:React.FC<MovieCardProps> = ({
                 delay-300
                 w-full
                 h-[12vw]"  
-             to={data?.thumbnailUrl} fill="Thumbnail" />
+             src={data?.thumbnailUrl} alt="Thumbnail" />
              <div className="
                     opacity-0
                     absolute
@@ -45,7 +45,7 @@ const MovieCard:React.FC<MovieCardProps> = ({
                     group-hover:translate-x-[1vw]
                     group-hover:opacity-100                         
                 ">
-                    <image className="
+                    <img className="
                         cursor-pointer
                         object-cover
                         transition
@@ -55,7 +55,7 @@ const MovieCard:React.FC<MovieCardProps> = ({
                         w-full
                         h-[12vw]
                         "
-                     to={data?.thumbnailUrl} fill="Thumbnail" />
+                     src={data?.thumbnailUrl} alt="Thumbnail" />
                      <div className="
                         z-10
                         bg-zinc-800
