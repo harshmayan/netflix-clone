@@ -6,7 +6,7 @@ import { NextPageContext } from 'next/types'
 import useMoviesList from '@/hooks/useMovieList';
 import useFavorites from '@/hooks/useFavorites';
 import InfoModal from '@/components/InfoModal';
-import useInfoModal from '@/hooks/useInfoModal';
+import useInfoModal from '@/hooks/useInfoModalStore';
 
 export async function getServerSideProps(context:NextPageContext) {
   const session = await getSession(context);
