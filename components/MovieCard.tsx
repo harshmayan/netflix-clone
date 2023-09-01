@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import { PlayIcon } from '@heroicons/react/24/solid';
 
-import { MovieInterface } from '@/types';
+import { MovieInterface } from '@/types/types';
 import FavoriteButton from '@/components/FavoriteButton';
 import useInfoModalStore from '@/hooks/useInfoModalStore';
 
